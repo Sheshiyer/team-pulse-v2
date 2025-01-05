@@ -1,0 +1,20 @@
+{
+  "name": "team-pulse-scripts",
+  "version": "1.0.0",
+  "description": "Scripts for Team Pulse Raycast extension",
+  "main": "notion-clockify-sync.js",
+  "scripts": {
+    "build": "tsc",
+    "sync": "ts-node notion-clockify-sync.ts"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.14",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3"
+  }
+}

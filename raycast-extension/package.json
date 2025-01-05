@@ -1,0 +1,42 @@
+{
+  "name": "team-pulse",
+  "title": "Team Pulse",
+  "version": "1.0.0",
+  "description": "Track employee activity, hours worked, holidays, and mentorship status through Notion integration",
+  "author": "",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "employee-overview",
+      "title": "Team Pulse: Employees",
+      "description": "View all employees with key metrics",
+      "mode": "view"
+    },
+    {
+      "name": "employee-detail",
+      "title": "Team Pulse: Employee Details",
+      "description": "View detailed information for a specific employee",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@notionhq/client": "latest",
+    "@raycast/api": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "~20.8.10",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^8.10.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
